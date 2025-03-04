@@ -25,7 +25,6 @@ int main() {
     i++;
   }
 
-  char result[100];
   char *encrypted = encrypt(user_input, shift_value);
   char *decrypted = decrypt(encrypted, shift_value);
   printf("\nThe message is %s\n", user_input);
