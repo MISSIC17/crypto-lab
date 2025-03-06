@@ -6,8 +6,10 @@ char *encrypt(char *, int);
 char *decrypt(char *, int);
 
 int main() {
-  int shift_value = 3;
+  int shift_value;
   char user_input[MAX];
+  printf("Enter shift value:::>");
+  scanf("%d", &shift_value);
   printf("Enter the value to be encrypted(only alpbhanum)::>");
   scanf("%s", user_input);
   int i = 0;
